@@ -6,8 +6,10 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-redirect-from'
   gem 'jemoji'
+  gem 'jekyll-livereload'  # ← 🔥 this is the missing line
   gem 'webrick', '~> 1.8'
 end
 
 gem 'github-pages'
 gem 'connection_pool', '2.5.0'
+
