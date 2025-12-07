@@ -41,12 +41,29 @@ redirect_from:
 
 <div class="exp-container">
   <div class="exp-logo">
+    <img src="{{ base_path }}/images/pagarbook_logo.webp" alt="Pagarbook Logo">
+  </div>
+  <div class="exp-details">
+    <strong>Pagarbook</strong><br>
+    <div class="role"><strong>Software Developer</strong><span class="date">Aug 2025 – Present</span></div>
+    <ul>
+      <li>Built backend services for attendance, payroll, and workforce management</li>
+      <li>Implemented Role-Based Access Control with customizable permissions</li>
+      <li>Developed bulk Excel workflows for large-scale staff and payroll updates</li>
+      <li>Designed optimized data-migration pipelines for new microservices</li>
+      <li>Improved reliability of attendance flows (face, biometric, manual)</li>
+      <li>Shipped features end-to-end with product, design, and infra teams</li>
+    </ul>
+  </div>
+</div>
+
+<div class="exp-container">
+  <div class="exp-logo">
     <img src="{{ base_path }}/images/sdgr-logo.png" alt="Schrödinger Logo">
   </div>
   <div class="exp-details">
     <strong>Schrödinger (D.E. Shaw)</strong><br>
-    <div class="role"><strong>Software Developer 2 </strong><span class="date">Jul 2024 – Present</span></div>
-    <div class="role"><strong>Software Developer </strong><span class="date">Oct 2023 – Jun 2024</span></div>
+    <div class="role"><strong>Software Developer</strong><span class="date">Oct 2023 – Jul 2025</span></div>
     <ul>
       <li>Built Django REST APIs with TDD and Pytest</li>
       <li>Managed background jobs with Celery + Redis</li>
@@ -100,7 +117,7 @@ Fun fact: I survived 8 semesters, competitive programming addiction, and 2am bug
 
 I love building things that work reliably, scale gracefully, and occasionally surprise me with a `200 OK`.
 
-- 🧱 **Backend Engineering** — Django, DRF, PostgreSQL, Redis, Celery... basically my playground  
+- 🧱 **Backend Engineering** — NodeJS, NestJS, Django, DRF, PostgreSQL, Redis, Celery... basically my playground  
 - 🌐 **Frontend (when absolutely necessary)** — ReactJS, Redux, and HTML/CSS magic  
 - ⚙️ **DevOps & Infra** — Docker, Kubernetes, GCP, AWS, Terraform, Git (with as few `--force` pushes as possible)  
 - 📊 **Data Pipelines** — Airbyte, DBT, custom ETL flows, and SQL queries that don't need `EXPLAIN`... usually  

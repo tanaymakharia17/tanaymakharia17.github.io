@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Tanay Makharia / Home"
 title_separator          : "-"
 name                     : &name "Tanay Makharia"
-description              : &description "SDE-2 @ Schrödinger (D.E. Shaw) | Former SDE Intern @ OLX Group | LNMIIT'23"
+description              : &description "SDE @ Pagarbook | Former SDE @ Schrödinger (D.E. Shaw), OLX Group | LNMIIT'23"
 url                      : https://tanaymakharia17.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "tanaymakharia17.github.io"
@@ -25,13 +25,13 @@ author:
   avatar           : "profile.png"
   name             : "Tanay Makharia"
   pronouns         : # "he/him"  
-  bio              : "SDE-2 @ Schrödinger (D.E. Shaw) | Former SDE Intern @ OLX Group | LNMIIT'23"
-  location         : "Hyderabad, India"
-  employer         : "Schrödinger"
+  bio              : "SDE @ Pagarbook | Former SDE @ Schrödinger (D.E. Shaw), OLX Group | LNMIIT'23"
+  location         : "Bengaluru, India"
+  employer         : "Pagarbook"
   uri              : # URL
   email            : "realtanaymakharia@gmail.com"
-  resume_preview_url       : "https://drive.google.com/file/d/12n1BGt6arIrN7yRw-pj_-U3ZseV3O8N9/preview"
-  resume_download_url      : "https://drive.google.com/uc?export=download&id=12n1BGt6arIrN7yRw-pj_-U3ZseV3O8N9"
+  resume_preview_url       : "https://drive.google.com/file/d/1W6I0jHTCpZE5yZqDUrUGBPp4ZGSQ00P7/preview"
+  resume_download_url      : "https://drive.google.com/file/d/1W6I0jHTCpZE5yZqDUrUGBPp4ZGSQ00P7"
 
   # Academic websites
   academia         : # URL
