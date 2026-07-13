@@ -7,7 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-👋 Hey! I’m **Tanay Makharia**, a software developer who loves clean code, backend chaos, and ReactJS that doesn’t break on refresh.
+👋 Hey! I’m **Tanay Makharia**, a backend engineer with 3+ years building data systems at scale — payroll for 80k+ businesses, a computational-chemistry platform, and a 33M-user marketplace. I love clean code, backend chaos, and ReactJS that doesn’t break on refresh.
+
+I specialize in zero-downtime PostgreSQL migrations, multi-tenant access control, and query-performance engineering — and I operate AI coding agents as leverage while owning every architecture decision myself.
 
 ---
 
@@ -32,10 +34,20 @@ redirect_from:
 }
 .exp-details .role {
   font-style: italic;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 1rem;
+  row-gap: 0.15rem;
 }
 .exp-details .date {
-  float: right;
   color: #888;
+  font-style: normal;
+  margin-left: auto;
+  white-space: nowrap;
+}
+.exp-details ul {
+  line-height: 1.55;
 }
 </style>
 
@@ -45,14 +57,15 @@ redirect_from:
   </div>
   <div class="exp-details">
     <strong>Pagarbook</strong><br>
-    <div class="role"><strong>Software Developer</strong><span class="date">Aug 2025 – Present</span></div>
+    <div class="role"><strong>Software Development Engineer II</strong><span class="date">Aug 2025 – Present</span></div>
     <ul>
-      <li>Built backend services for attendance, payroll, and workforce management</li>
-      <li>Implemented Role-Based Access Control with customizable permissions</li>
-      <li>Developed bulk Excel workflows for large-scale staff and payroll updates</li>
-      <li>Designed optimized data-migration pipelines for new microservices</li>
-      <li>Improved reliability of attendance flows (face, biometric, manual)</li>
-      <li>Shipped features end-to-end with product, design, and infra teams</li>
+      <li>Led a zero-downtime payroll-config migration, moving TDS, month-size & shift-hours to per-staff/per-template sources of truth with temporal snapshotting of settled pay cycles</li>
+      <li>Architected a multi-tenant Business→Division access hierarchy spanning login, auth context, RBAC, and the data layer</li>
+      <li>Cut a multi-million-row PostgreSQL backfill from hours to minutes (~8× smaller working set) and dropped another query from ~70s to ~15s via a partial index over a 96.9M-row scan</li>
+      <li>Diagnosed and healed production organizationId drift across 7 tenant-scoped tables, fixing soft-delete/orphan-row bugs that had blocked customers for days</li>
+      <li>Owned a breaking payroll API change across 5 codebases (NestJS, iOS, Android, Kotlin Multiplatform, 2 React apps), preempting a fleet-wide login lockout</li>
+      <li>Overhauled the busiest attendance endpoint, collapsing per-staff N+1 queries from ≈600 → 5 for a 100-staff org and parallelizing 12 serial setup queries</li>
+      <li>Expanded RBAC with granular payments/payroll/roster permissions and built a transactional bulk staff-deactivation pipeline with backoff-retry</li>
     </ul>
   </div>
 </div>
@@ -63,13 +76,13 @@ redirect_from:
   </div>
   <div class="exp-details">
     <strong>Schrödinger (D.E. Shaw)</strong><br>
-    <div class="role"><strong>Software Developer</strong><span class="date">Oct 2023 – Jul 2025</span></div>
+    <div class="role"><strong>Software Development Engineer I → II</strong><span class="date">Oct 2023 – Jul 2025</span></div>
     <ul>
-      <li>Built Django REST APIs with TDD and Pytest</li>
-      <li>Managed background jobs with Celery + Redis</li>
-      <li>Reduced ETL latency by 90% using DBT + Airbyte</li>
-      <li>Deployed microservices with Docker, Kubernetes, and Terraform</li>
-      <li>Conducted interviews and mentored interns</li>
+      <li>Built and owned 40+ Django REST APIs for ST3, Schrödinger's internal target-tracking platform, developed TDD-first with Pytest, and shipped the matching React features end-to-end, cutting time-to-insight by 35%</li>
+      <li>Designed Celery + Redis async pipelines for structured-data processing, notifications, and audit trails, keeping long-running jobs off the request path</li>
+      <li>Automated the refresh of ChEMBL and other external biology datasets via a scheduled job, Airbyte ingestion, and DBT reshaping, cutting data latency from ~1–2 hours to ~10–15 minutes</li>
+      <li>Ran the team's containerized microservices on GCP (Docker, Kubernetes) and authored reusable Terraform modules adopted across 4–5 environments</li>
+      <li>Interviewed backend candidates and mentored interns; promoted to SDE II in 11 months</li>
     </ul>
   </div>
 </div>
@@ -82,10 +95,9 @@ redirect_from:
     <strong>OLX Group (Autos Division)</strong><br>
     <div class="role"><strong>Software Engineer Intern</strong> <span class="date">Jan 2023 – Jul 2023</span></div>
     <ul>
-      <li>Enhanced UI/UX for 33M+ monthly users</li>
-      <li>Improved journey completion by 8% via A/B tested flows</li>
-      <li>Increased frontend test coverage from 30% to 70%</li>
-      <li>Collaborated in Agile teams and deployed with GitLab CI/CD</li>
+      <li>Improved OLX Autos' user sell journey (33M+ monthly users), increasing completion rate by 8%</li>
+      <li>Raised front-end test coverage from 30% to 70% using React Testing Library</li>
+      <li>Shipped UI improvements with cross-functional teams via GitLab CI/CD</li>
     </ul>
   </div>
 </div>
@@ -117,11 +129,13 @@ Fun fact: I survived 8 semesters, competitive programming addiction, and 2am bug
 
 I love building things that work reliably, scale gracefully, and occasionally surprise me with a `200 OK`.
 
-- 🧱 **Backend Engineering** — NodeJS, NestJS, Django, DRF, PostgreSQL, Redis, Celery... basically my playground  
-- 🌐 **Frontend (when absolutely necessary)** — ReactJS, Redux, and HTML/CSS magic  
-- ⚙️ **DevOps & Infra** — Docker, Kubernetes, GCP, AWS, Terraform, Git (with as few `--force` pushes as possible)  
+- 💻 **Languages** — TypeScript, JavaScript, Python, Java, SQL, C++
+- 🧱 **Backend Engineering** — Node.js, NestJS, Django, DRF, PostgreSQL, Redis, Kafka, RabbitMQ, Celery... basically my playground  
+- 🌐 **Frontend (when absolutely necessary)** — React, Next.js, Redux, TypeScript, and HTML/CSS magic  
+- ⚙️ **DevOps & Infra** — Docker, Kubernetes, GCP, AWS, Terraform, GitHub Actions, Datadog, Git (with as few `--force` pushes as possible)  
 - 📊 **Data Pipelines** — Airbyte, DBT, custom ETL flows, and SQL queries that don't need `EXPLAIN`... usually  
-- 🧪 **Testing** — Pytest, Unittest, Swagger docs, and tests that actually run on CI
+- 🧪 **Testing** — Pytest, Unittest, Swagger docs, and tests that actually run on CI  
+- 🤖 **AI-Assisted Dev** — Cursor, Claude Code, GitHub Copilot as leverage, not autopilot
 
 ---
 
