@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-👋 Hey! I’m **Tanay Makharia**, a backend engineer with 3+ years building data systems at scale — payroll for 80k+ businesses, a computational-chemistry platform, and a 33M-user marketplace. I love clean code, backend chaos, and ReactJS that doesn’t break on refresh.
+👋 Hey! I’m **Tanay Makharia**, a backend engineer with 3.5+ years building data systems at scale — payroll for 80k+ businesses, a computational-chemistry platform, and a 33M-user marketplace. I love clean code, backend chaos, and ReactJS that doesn’t break on refresh.
 
-I specialize in zero-downtime PostgreSQL migrations, multi-tenant access control, and query-performance engineering — and I operate AI coding agents as leverage while owning every architecture decision myself.
+I specialize in zero-downtime PostgreSQL migrations, multi-tenant access control, and query-performance engineering — and I’m now extending into AI engineering through hands-on projects in semantic/vector search and real-time event analytics. I own every architecture decision end-to-end while using AI coding agents as leverage.
 
 ---
 
@@ -57,7 +57,7 @@ I specialize in zero-downtime PostgreSQL migrations, multi-tenant access control
   </div>
   <div class="exp-details">
     <strong>Pagarbook</strong><br>
-    <div class="role"><strong>Software Development Engineer II</strong><span class="date">Aug 2025 – Present</span></div>
+    <div class="role"><strong>Software Development Engineer II</strong><span class="date">Aug 2025 – Jul 2026</span></div>
     <ul>
       <li>Led a zero-downtime payroll-config migration, moving TDS, month-size & shift-hours to per-staff/per-template sources of truth with temporal snapshotting of settled pay cycles</li>
       <li>Architected a multi-tenant Business→Division access hierarchy spanning login, auth context, RBAC, and the data layer</li>
@@ -130,10 +130,11 @@ Fun fact: I survived 8 semesters, competitive programming addiction, and 2am bug
 I love building things that work reliably, scale gracefully, and occasionally surprise me with a `200 OK`.
 
 - 💻 **Languages** — TypeScript, JavaScript, Python, Java, SQL, C++
-- 🧱 **Backend Engineering** — Node.js, NestJS, Django, DRF, PostgreSQL, Redis, Kafka, RabbitMQ, Celery... basically my playground  
+- 🧱 **Backend Engineering** — Node.js, NestJS, Django, DRF, PostgreSQL, Redis, Kafka, RabbitMQ, ClickHouse, Celery... basically my playground  
 - 🌐 **Frontend (when absolutely necessary)** — React, Next.js, Redux, TypeScript, and HTML/CSS magic  
 - ⚙️ **DevOps & Infra** — Docker, Kubernetes, GCP, AWS, Terraform, GitHub Actions, Datadog, Git (with as few `--force` pushes as possible)  
 - 📊 **Data Pipelines** — Airbyte, DBT, custom ETL flows, and SQL queries that don't need `EXPLAIN`... usually  
+- 🧠 **AI Engineering** — semantic & vector search (pgvector), embeddings, hybrid retrieval, Reciprocal Rank Fusion, LLM API integration & prompt design, evaluation harnesses  
 - 🧪 **Testing** — Pytest, Unittest, Swagger docs, and tests that actually run on CI  
 - 🤖 **AI-Assisted Dev** — Cursor, Claude Code, GitHub Copilot as leverage, not autopilot
 
