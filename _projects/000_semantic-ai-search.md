@@ -1,22 +1,36 @@
 ---
 title: "Semantic AI Search: Natural-Language Product Search"
-excerpt: "Hybrid semantic + full-text search over a 10K-product catalog, fusing pgvector embeddings with Postgres full-text via Reciprocal Rank Fusion and LLM intent parsing."
+excerpt: "Natural-language search over a 10K-product catalog — hybrid pgvector + full-text retrieval fused with Reciprocal Rank Fusion, plus LLM-powered intent parsing."
 collection: portfolio
 ---
 
 ### 📅 Duration: Jun 2026 – Jul 2026
 ### 🛠️ Tech Stack: Python · pgvector · PostgreSQL (full-text) · LLM (Groq / Llama) · Docker
 
-**Semantic AI Search** brings natural-language search to a 10K-product catalog, combining vector semantics with classic full-text retrieval so queries understand *meaning*, not just keywords.
+**Semantic AI Search** brings natural-language search to a 10K-product catalog — understanding what a query *means* instead of just matching keywords, by blending vector semantics with classic full-text retrieval.
 
 ---
 
-### 🔍 Highlights
+### 🔍 How It Works
 
-- Built **hybrid retrieval** that combines **pgvector** semantic embeddings with Postgres full-text search, fused via **Reciprocal Rank Fusion** for the best of both signals.
-- Added **LLM-based intent parsing** (price, sort, category) with a regex fallback, so filters are extracted from plain-English queries.
-- Fully **Dockerized** with a **black-box evaluation harness** to measure retrieval quality objectively.
+#### 🔎 Hybrid Retrieval:
+- Combines **pgvector** semantic embeddings with Postgres **full-text** search.
+- Fuses both rankings via **Reciprocal Rank Fusion (RRF)**, so results are relevant both semantically and lexically.
+
+#### 🧠 LLM Intent Parsing:
+- Uses an **LLM** to extract structured intent — price, sort order, and category — from plain-English queries.
+- Falls back to a **regex** parser when the LLM is unavailable, keeping search resilient.
+
+#### 🧪 Evaluation & Deployment:
+- Ships with a **black-box evaluation harness** to measure retrieval quality objectively.
+- Fully **Dockerized** for reproducible, one-command setup.
 
 ---
 
-> This project was my hands-on dive into AI engineering — embeddings, vector search, and retrieval fusion — while keeping the same architecture-first, own-every-decision approach I bring to backend systems.
+### 🔗 Links
+
+- 📂 **GitHub**: _link coming soon_
+
+---
+
+> This was my hands-on entry into AI engineering — embeddings, vector search, and retrieval fusion — bringing the same architecture-first, own-every-decision approach I use for backend systems to the AI stack.
