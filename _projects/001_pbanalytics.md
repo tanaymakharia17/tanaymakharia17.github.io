@@ -21,7 +21,7 @@ collection: portfolio
 
 ### 🔗 Links
 
-- 📂 **GitHub**: [tanaymakharia17/pb_analytics](https://github.com/tanaymakharia17/pb_analytics)
+- 📂 **GitHub**: [tanaymakharia17/pb-analytics-main](https://github.com/tanaymakharia17/pb-analytics-main)
 
 ---
 
