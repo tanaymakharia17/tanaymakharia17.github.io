@@ -29,7 +29,7 @@ collection: portfolio
 
 ### 🔗 Links
 
-- 📂 **GitHub**: _link coming soon_
+- 📂 **GitHub**: [tanaymakharia17/semantic-ai-search](https://github.com/tanaymakharia17/semantic-ai-search)
 
 ---
 
