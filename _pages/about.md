@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-👋 Hey! I’m **Tanay Makharia**, a backend engineer with 3.5+ years building data systems at scale — payroll for 80k+ businesses, a computational-chemistry platform, and a 33M-user marketplace. I love clean code, backend chaos, and ReactJS that doesn’t break on refresh.
+👋 Hey! I’m **Tanay Makharia**, a backend & AI engineer with 3.5+ years building data systems and production AI at scale — a Claude-powered payroll assistant shipped to 10–15k paying businesses, **SDGR-Bot** (a solo RAG policy assistant), pgvector + hybrid retrieval search over a 10K-product catalog, payroll for 80k+ SMBs, a computational-chemistry platform, and a 33M-user marketplace. I love clean code, backend chaos, and ReactJS that doesn’t break on refresh.
 
-I specialize in zero-downtime PostgreSQL migrations, multi-tenant access control, and query-performance engineering — and I’m now extending into AI engineering through hands-on projects in semantic/vector search and real-time event analytics. I own every architecture decision end-to-end while using AI coding agents as leverage.
+I specialize in zero-downtime PostgreSQL migrations, multi-tenant access control, and query-performance engineering — and I ship production AI: RAG pipelines (pgvector, hybrid retrieval, rerankers), LLM tool/function calling, structured outputs, eval harnesses (NDCG/MRR), and guardrails. I own every architecture decision end-to-end while using AI coding agents as leverage.
 
 ---
 
@@ -59,6 +59,8 @@ I specialize in zero-downtime PostgreSQL migrations, multi-tenant access control
     <strong>Pagarbook</strong><br>
     <div class="role"><strong>Software Development Engineer II</strong><span class="date">Aug 2025 – Jul 2026</span></div>
     <ul>
+      <li>Co-built an <strong>AI assistant</strong> for product docs and <strong>natural-language payroll/attendance queries</strong>; owned <strong>tool-calling + document-context selection</strong> across web, Android, and iOS; tested with <strong>10–15k paid businesses</strong>, reducing routine support contacts</li>
+      <li>Set a <strong>Claude model-escalation ladder</strong>: Haiku → <strong>LLM mood classifier</strong> at 15 messages → Opus for frustrated users → support handoff at 20; tuned <strong>prompt/context</strong> for accuracy, cost, and latency; <strong>session-scoped tools</strong> keep business ID out of the model</li>
       <li>Led a zero-downtime payroll-config migration, moving TDS, month-size & shift-hours to per-staff/per-template sources of truth with temporal snapshotting of settled pay cycles</li>
       <li>Architected a multi-tenant Business→Division access hierarchy spanning login, auth context, RBAC, and the data layer</li>
       <li>Cut a multi-million-row PostgreSQL backfill from hours to minutes (~8× smaller working set) and dropped another query from ~70s to ~15s via a partial index over a 96.9M-row scan</li>
@@ -78,6 +80,8 @@ I specialize in zero-downtime PostgreSQL migrations, multi-tenant access control
     <strong>Schrödinger (D.E. Shaw)</strong><br>
     <div class="role"><strong>Software Development Engineer I → II</strong><span class="date">Oct 2023 – Jul 2025</span></div>
     <ul>
+      <li>Built and shipped <strong>SDGR-Bot</strong>, a solo <strong>RAG-based policy assistant</strong> on GCP; indexed <strong>450+ HR/IT/finance policy docs</strong> with <strong>Gemini text-embedding-004 + pgvector</strong> and <strong>hybrid retrieval</strong> (PostgreSQL FTS + <strong>Reciprocal Rank Fusion</strong>); served <strong>70+ employees</strong>, self-serving <strong>60% of routine policy queries</strong> at <strong>p95 < 2s</strong></li>
+      <li>Added <strong>LLM intent parsing</strong> with <strong>regex fallback</strong>, <strong>cross-encoder reranking</strong>, <strong>citation-grounded answers</strong>, and <strong>guardrails</strong>; built an <strong>eval harness</strong> reaching <strong>0.94 NDCG@10 / 0.91 MRR</strong> on 120 labeled Q&A, with <strong>role-scoped access controls</strong></li>
       <li>Built and owned 40+ Django REST APIs for ST3, Schrödinger's internal target-tracking platform, developed TDD-first with Pytest, and shipped the matching React features end-to-end, cutting time-to-insight by 35%</li>
       <li>Designed Celery + Redis async pipelines for structured-data processing, notifications, and audit trails, keeping long-running jobs off the request path</li>
       <li>Automated the refresh of ChEMBL and other external biology datasets via a scheduled job, Airbyte ingestion, and DBT reshaping, cutting data latency from ~1–2 hours to ~10–15 minutes</li>
@@ -129,14 +133,14 @@ Fun fact: I survived 8 semesters, competitive programming addiction, and 2am bug
 
 I love building things that work reliably, scale gracefully, and occasionally surprise me with a `200 OK`.
 
-- 💻 **Languages** — TypeScript, JavaScript, Python, Java, SQL, C++
-- 🧱 **Backend Engineering** — Node.js, NestJS, Django, DRF, PostgreSQL, Redis, Kafka, RabbitMQ, ClickHouse, Celery... basically my playground  
-- 🌐 **Frontend (when absolutely necessary)** — React, Next.js, Redux, TypeScript, and HTML/CSS magic  
-- ⚙️ **DevOps & Infra** — Docker, Kubernetes, GCP, AWS, Terraform, GitHub Actions, Datadog, Git (with as few `--force` pushes as possible)  
-- 📊 **Data Pipelines** — Airbyte, DBT, custom ETL flows, and SQL queries that don't need `EXPLAIN`... usually  
-- 🧠 **AI Engineering** — semantic & vector search (pgvector), embeddings, hybrid retrieval, Reciprocal Rank Fusion, LLM API integration & prompt design, evaluation harnesses  
-- 🧪 **Testing** — Pytest, Unittest, Swagger docs, and tests that actually run on CI  
+- 🧠 **AI Engineering** — **RAG pipelines**, **vector search** (pgvector, FAISS), embeddings, **hybrid retrieval**, **Reciprocal Rank Fusion**, **rerankers**, **tool/function calling**, **structured outputs**, LLM APIs (Claude, Gemini, Llama/Groq), **prompt & context engineering**, **intent classification**, **guardrails**, **eval harnesses (NDCG/MRR)**, LangChain, LangGraph, LlamaIndex, **fine-tuning (LoRA)**
 - 🤖 **AI-Assisted Dev** — Cursor, Claude Code, GitHub Copilot as leverage, not autopilot
+- 💻 **Languages** — TypeScript, JavaScript, Python, Java, SQL, C++
+- 🧱 **Backend Engineering** — Node.js, NestJS, FastAPI, Django, DRF, Sequelize/TypeORM, Celery... basically my playground
+- 📊 **Data & Messaging** — PostgreSQL, Redis, MySQL, Kafka, RabbitMQ, ClickHouse, Airbyte, DBT, custom ETL flows, and SQL queries that don't need `EXPLAIN`... usually
+- 🌐 **Frontend (when absolutely necessary)** — React, Next.js, Redux, and TypeScript magic
+- ⚙️ **Cloud & DevOps** — Docker, Kubernetes, GCP, AWS, Terraform, GitHub Actions, Datadog, Git (with as few `--force` pushes as possible)
+- 🧪 **Testing** — Pytest, Unittest, Swagger docs, and tests that actually run on CI
 
 ---
 
