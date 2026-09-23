@@ -1,7 +1,7 @@
 ---
 title: 'Concurrency Problems & Isolation Levels'
-date: 2025-09-23
-permalink: /posts/2025/09/concurrency-problems-isolation-levels/
+date: 2026-09-23
+permalink: /posts/2026/09/concurrency-problems-isolation-levels/
 tags:
   - database
   - backend
