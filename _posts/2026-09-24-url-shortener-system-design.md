@@ -312,7 +312,7 @@ Start simple, then scale out:
 | Hashing vs Snowflake | Hashing is stateless; Snowflake avoids collisions but needs clock sync |
 | SQL vs NoSQL | SQL is easy and consistent; NoSQL scales writes/storage more cheaply |
 | Cache-aside | Fast reads, but if many entries expire at once (a **cache stampede**) they all hit the database together |
-| Sharding by `short_code` | Great for lookups, but deduping by `long_url` becomes a separate problem |
+| Sharding by `short_code` | Fast lookups and even distribution, but queries across all URLs (reports, analytics) get harder |
 
 ## Key Takeaways
 
