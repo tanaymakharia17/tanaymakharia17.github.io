@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-👋 Hey! I’m **Tanay Makharia**, a backend & AI engineer with **3.5+ years** building data systems and production AI at scale — a **Claude-powered payroll assistant** shipped to **10–15k paying businesses**, **SDGR-Bot** (a solo **RAG policy assistant**), **pgvector + hybrid retrieval** search over a **10K-product catalog**, payroll for **80k+ SMBs**, a **computational-chemistry platform**, and a **33M-user marketplace**. I love clean code, backend chaos, and ReactJS that doesn’t break on refresh.
+👋 Hey! I’m **Tanay Makharia**, a backend & AI engineer with **3+ years** building data systems and production AI at scale — a **Claude-powered payroll assistant** shipped to **10–15k paying businesses**, **SDGR-Bot** (a solo **RAG policy assistant**), **pgvector + hybrid retrieval** search over a **10K-product catalog**, payroll for **80k+ SMBs**, a **computational-chemistry platform**, and a **33M-user marketplace**. I love clean code, backend chaos, and ReactJS that doesn’t break on refresh.
 
 I specialize in **zero-downtime PostgreSQL migrations**, **multi-tenant access control**, and **query-performance engineering** — and I ship **production AI**: **RAG pipelines** (pgvector, hybrid retrieval, rerankers), **LLM tool/function calling**, **structured outputs**, **eval harnesses (NDCG/MRR)**, and **guardrails**. I own every architecture decision end-to-end while using **AI coding agents** as leverage.
 
@@ -78,9 +78,9 @@ I specialize in **zero-downtime PostgreSQL migrations**, **multi-tenant access c
   </div>
   <div class="exp-details">
     <strong>Schrödinger (D.E. Shaw)</strong><br>
-    <div class="role"><strong>Software Development Engineer I → II</strong><span class="date">Oct 2023 – Jul 2025</span></div>
+    <div class="role"><strong>Software Development Engineer I → II</strong><span class="date">Oct 2023 – May 2025</span></div>
     <ul>
-      <li>Built and shipped <strong>SDGR-Bot</strong>, a solo <strong>RAG-based policy assistant</strong> on GCP; indexed <strong>450+ HR/IT/finance policy docs</strong> with <strong>Gemini text-embedding-004 + pgvector</strong> and <strong>hybrid retrieval</strong> (PostgreSQL FTS + <strong>Reciprocal Rank Fusion</strong>); served <strong>70+ employees</strong>, self-serving <strong>60% of routine policy queries</strong> at <strong>p95 < 2s</strong></li>
+      <li>Built and shipped <strong>SDGR-Bot</strong>, a solo <strong>RAG-based policy assistant</strong> on GCP; indexed <strong>30+ HR/IT/finance policy docs</strong> with <strong>FAISS embeddings</strong> and <strong>similarity search</strong>, passing retrieved context to <strong>Gemini</strong> for grounded answers; served <strong>70+ employees</strong>, self-serving <strong>60% of routine policy queries</strong> at <strong>p95 < 2s</strong></li>
       <li>Added <strong>LLM intent parsing</strong> with <strong>regex fallback</strong>, <strong>cross-encoder reranking</strong>, <strong>citation-grounded answers</strong>, and <strong>guardrails</strong>; built an <strong>eval harness</strong> reaching <strong>0.94 NDCG@10 / 0.91 MRR</strong> on 120 labeled Q&A, with <strong>role-scoped access controls</strong></li>
       <li>Built and owned <strong>40+ Django REST APIs</strong> for ST3, Schrödinger's internal target-tracking platform, developed <strong>TDD-first with Pytest</strong>, and shipped the matching React features end-to-end, cutting <strong>time-to-insight by 35%</strong></li>
       <li>Designed <strong>Celery + Redis async pipelines</strong> for structured-data processing, notifications, and audit trails, keeping long-running jobs off the request path</li>
